@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+          div {
+             text-align: center;
+             margin-top: 15px;
+          }
+
+          
+          input:hover,select:hover{
+             margin-top: auto;
+             box-shadow: 2px 5px 10px rgb(250, 0, 0);
+            
+            }
+       </style>
+
+        <title> Welcome to TaskManager Web by TaskFlow Solutions</title>
+        <script src = "BrowneTMP.js" defer></script>
+    </head>
+    <body>
+        <div id ="mainDiv">
+            <h2>
+                TaskManager Web by TaskFlow Solutions
+            </h2>
+            <h3>Task</h3>
+                 
+            <div id="formDiv">
+        
+                <form id= "inForm">
+                    
+                    <input type="text"  id= "task" required placeholder="Enter task here"/>
+                   <BR><BR><input name="importantOrNot" type= "checkbox" id= "importantOrNot"/>
+                    <label for ="importantOrNot"> Is this Important?    </label>
+                    <select name="priority" id="priority">
+                        <option id="high">High</option>
+                        <option id="medium">Medium</option>
+                        <option id="low">Low</option>
+                    </select>
+                    <label for="priority">Priority?</label>
+                    <BR><BR>
+                    <BR><input type="submit" id="add" value="Add Task">
+                    <input type="reset" id="reset" value="Reset Task Input">
+                    
+                </form>
+        
+            </div>
+        </div>
+        <hr>
+        <div>Tasks</div>
+        <div id="taskmanager">
+
+            
+
+        </div>
+    </body>
+    
+</html>
